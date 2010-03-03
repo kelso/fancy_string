@@ -1,0 +1,38 @@
+FancyString
+===========
+
+If you want to use SEO url, use this little plugin. Fancy_string extends standard String class. Anywhere you can call "bla blah".fancy method
+
+SEO url is better than "/articles/1". You can simple get url like "/articles/1/my-first-article"
+
+
+Example
+=======
+
+"My COOL fancy string".fancy
+# => "my-cool-fancy-string"
+
+
+Real example
+============
+
+Imagine, we have a articles controller.
+
+1. Add this route, to allow additional parameter *fancy
+   
+    map.article 'article/:id/*fancy', :controller => 'article', :action => 'show'
+
+2. Then use link_to helper like this:
+
+    # Controller
+    @article = Article.find(params[:id])
+
+    # View
+    <%= link_to @article.title, article_path(@article, @article.title.fancy)
+
+    # output
+
+    <a href="/article/1/my-first-article">My first article</a>
+
+
+Copyright (c) 2010 Stefan Huska, released under the MIT license
