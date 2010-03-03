@@ -1,7 +1,7 @@
 FancyString
 ===========
 
-If you want to use SEO url, use this little plugin. Fancy_string extends standard String class. Anywhere you can call "bla blah".fancy method
+If you want to use SEO url, this little plugin will help you. Fancy_string extends standard String class. Anywhere you can call "bla blah".fancy method
 
 SEO url is better than "/articles/1". You can simple get url like "/articles/1/my-first-article"
 
@@ -36,3 +36,4 @@ Imagine, we have a articles controller.
 
 
 Copyright (c) 2010 Stefan Huska, released under the MIT license
+
