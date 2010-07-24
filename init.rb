@@ -1,6 +1,7 @@
 String.class_eval do
   def fancy
     str = self
+    str = str.gsub("."," ")
     str = str.gsub(":"," ")
     str = str.gsub("-"," ")
     str = str.gsub(/[ ]+/," ") # replace "multi" space to one
